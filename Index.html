@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Dedication with Webcam</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+</head>
+<body>
+  <h1>Product Dedication with Webcam</h1>
+  <video id="webcam" autoplay playsinline width="640" height="480"></video>
+  <canvas id="canvas" width="640" height="480"></canvas>
+  <div id="predictions"></div>
+
+  <script>
+    $(document).ready(async function () {
+      const webcam = document.getElementById('webcam');
+      const canvas = document.getElementById('canvas');
+      const context = canvas.getContext('2d');
+      const predictionsDiv = document.getElementById('predictions');
+
+      // Load the COCO-SSD model
+      const model = await cocoSsd.load();
+
+      // Access the webcam
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then((stream) => {
+          webcam.srcObject = stream;
+        })
+        .catch((error) => {
+          console.error('Error accessing webcam:', error);
+        });
+
+      // Perform object detection on each webcam frame
+      webcam.addEventListener('loadeddata', async () => {
+        setInterval(async () => {
+          context.drawImage(webcam, 0, 0, 640, 480);
+          const predictions = await model.detect(canvas);
+
+          // Display predictions in the "predictions" div
+          predictionsDiv.innerText = JSON.stringify(predictions, null, 2);
+        }, 1000); // Adjust the interval as needed
+      });
+    });
+  </script>
+</body>
+</html>
