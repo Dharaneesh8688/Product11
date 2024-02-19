@@ -32,7 +32,7 @@ $(document).ready(async function () {
     setInterval(async () => {
      
       const predictions = await model.detect(webcam);
-     // predictionsDiv.innerText = JSON.stringify(predictions[0].class, null, 2);
+     predictionsDiv.innerText = JSON.stringify(predictions[0].class, null, 2);
       
      
       if (predictions.length > 0) {
@@ -53,7 +53,7 @@ $(document).ready(async function () {
         detailsDiv.html("name of prodect: orange <br> Oranges are a rich <br> source of vitamin C,  providing over 100% of the recommended daily intake in just one fruit.<br> \
         They also contain significant amounts of dietary fiber, vitamin A, potassium, and <br> various phytochemicals such as flavonoids and carotenoids.");
       }
-      else if(predictions.length > 0 && predictions[0].class === "cell phone") {
+      else if(predictions.length > 0 && predictions[0].class === "bottle") {
         detailsDiv.text("hi");
       }
       else{
