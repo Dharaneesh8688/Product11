@@ -1,0 +1,121 @@
+{
+  "apple": [
+    {
+      "name": "Apple",
+      "scientific_details": {
+        "scientific_classification": {
+          "kingdom": "Plantae",
+          "phylum": "Angiosperms",
+          "class": "Eudicots",
+          "order": "Rosales",
+          "family": "Rosaceae",
+          "genus": "Malus",
+          "species": "Malus domestica"
+        },
+        "description": {
+          "overview": "Apples are the fruit of the apple tree, scientifically known as Malus domestica.",
+          "habitat": "Deciduous apple trees typically grow in temperate regions.",
+          "morphology": {
+            "leaves": "Oval-shaped with serrated edges, arranged alternately on branches.",
+            "flowers": "White or pink blossoms appearing in clusters during spring."
+          }
+        },
+        "varieties": [
+          "Gala",
+          "Fuji",
+          "Granny Smith",
+          "Honeycrisp",
+          "Red Delicious",
+          "Golden Delicious"
+        ],
+        "anatomy": {
+          "shape": "Round or slightly oblong with a stem at the top and a depression at the bottom.",
+          "skin": "Varies in color from red, green, yellow, to combinations of these colors.",
+          "flesh": "Juicy and crisp, ranging in color from white to yellowish.",
+          "core": {
+            "seeds": "Contains seeds surrounded by a fibrous central core called the carpel."
+          }
+        },
+        "nutritional_composition": {
+          "calories": 95,
+          "carbohydrates": "25 grams",
+          "dietary_fiber": "4 grams",
+          "vitamin_c": "14%",
+          "potassium": "6%"
+        },
+        "cultivation": {
+          "propagation": "Typically through grafting rather than seeds.",
+          "requirements": {
+            "soil": "Well-drained",
+            "climate": "Temperate",
+            "sunlight": "Adequate sunlight"
+          },
+          "harvesting": "Usually in the fall months when ripe."
+        },
+        "health_benefits": {
+          "digestive_health": "High fiber content promotes digestive health.",
+          "heart_health": "Antioxidants may reduce the risk of heart disease.",
+          "weight_management": "Low in calories and fat, aiding in weight management."
+        }
+      }
+    }
+  ],
+  "orange": [
+    {
+      "name": "Orange",
+      "scientific_details": {
+        "scientific_classification": {
+          "kingdom": "Plantae",
+          "phylum": "Angiosperms",
+          "class": "Eudicots",
+          "order": "Sapindales",
+          "family": "Rutaceae",
+          "genus": "Citrus",
+          "species": "Citrus sinensis"
+        },
+        "description": {
+          "overview": "Oranges are the fruit of the orange tree, scientifically known as Citrus sinensis.",
+          "habitat": "Orange trees grow in subtropical and tropical climates.",
+          "morphology": {
+            "leaves": "Alternate, oval-shaped leaves with a glossy green color.",
+            "flowers": "White flowers with a pleasant fragrance."
+          }
+        },
+        "varieties": [
+          "Navel",
+          "Valencia",
+          "Blood Orange",
+          "Clementine",
+          "Mandarin"
+        ],
+        "anatomy": {
+          "shape": "Round to oval shape with a leathery, dimpled skin.",
+          "color": "Orange when ripe, though some varieties may have different hues.",
+          "flesh": "Segments arranged in a circular pattern, juicy and sweet-tasting.",
+          "seeds": "Contain seeds, though some varieties may be seedless."
+        },
+        "nutritional_composition": {
+          "calories": 62,
+          "carbohydrates": "15 grams",
+          "dietary_fiber": "3 grams",
+          "vitamin_c": "85%",
+          "potassium": "5%"
+        },
+        "cultivation": {
+          "propagation": "Usually through grafting or budding onto rootstocks.",
+          "requirements": {
+            "soil": "Well-drained soil",
+            "climate": "Subtropical to tropical climate",
+            "sunlight": "Full sunlight"
+          },
+          "harvesting": "Typically during the winter months."
+        },
+        "health_benefits": {
+          "immune_support": "High vitamin C content boosts immune system.",
+          "skin_health": "Antioxidants contribute to healthy skin.",
+          "heart_health": "Potassium helps maintain healthy blood pressure levels."
+        }
+      }
+    }
+  ]
+}
