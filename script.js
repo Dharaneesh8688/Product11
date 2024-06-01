@@ -65,7 +65,7 @@ document.onkeydown = (e) => {
           } else {
             detailsDiv.text("No product detected");
           }
-        }, 1000);
+        }, 6000);
       });
     })
     .catch(error => {
